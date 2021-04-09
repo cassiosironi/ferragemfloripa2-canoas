@@ -1,0 +1,373 @@
+@charset "UTF-8";
+
+ body{
+	background-color:rgb(255,255,255); 
+	margin:0;
+	padding:0;
+	font-size: 17px;
+	font-family: Helvetica;
+	color: rgb(105,105,105);
+	
+}
+#wrapper {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	margin-top: 0px;
+	padding:10px;
+	font-size: 12px;
+	font-family: Helvetica;
+	color: rgb(105,105,105);
+	text-decoration: none;
+}
+.top{
+	margin-top: 0px;
+	padding:10px;
+	font-size: 12px;
+	font-family: Helvetica;
+	color: rgb(105,105,105);
+	text-decoration: none;
+	text-align: right;
+}
+
+@media screen and (max-width: 600px) {
+	.topnav a, topnav input[type=text]{
+		float: none;
+		display: block;
+		text-align:left;
+		width: 100%;
+		margin: 0px;
+		padding: 14px;
+	}
+	.topnav input [type=text] {
+	border: 1px solid #ccc;
+	}
+}
+
+.container-1 input#search{
+  margin-top: 40px;
+  width: 380px;
+  height: 30px;
+  background: rgb(255,255,255);
+  border: none;
+  font-size: 13pt;
+  float: right;
+  text-align: left-side;
+  color: rgb(105,105,105);
+  padding-left: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+ 
+   
+  -webkit-transition: background .55s ease;
+  -moz-transition: background .55s ease;
+  -ms-transition: background .55s ease;
+  -o-transition: background .55s ease;
+  transition: background .55s ease;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: rgb(255,255,255);		
+}
+
+.topnav a{
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 6px 25px;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: Helvetica;
+}
+.topnav a:hover {
+    font-weight: bold;
+	color: rgb(105,105,105);
+}
+.topnav input[type=text]{
+	float: right;
+	padding: 10px;
+	border: none;
+	margin-top: 8px;
+	margin-right: 16px;
+	font-size: 20px;
+}
+.under {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;	
+	color: rgb(105,105,105);
+}
+.under::after {
+    content: '';
+    display: block;
+	width: 0;
+    height: 3px;
+    background: rgb(34,139,34);
+    transition: width .3s;
+}
+.under:hover::after {
+    width: 100%;
+}
+.orcamento{
+	text-align: center;
+	background: rgb(34,139,34);
+	border: solid 2px rgb(34,139,34);
+	margin: 0px auto; 
+}
+
+.orcamento a{
+	text-align: center;
+	text-shadow: 2px 2px rgb(105,105,105);
+	font-size: 20px;
+	font-family: Helvetica;
+	color: rgb(255,255,255);
+	background: rgb(34,139,34);
+}
+
+.departments {
+	font-size: 17px;
+	background-color: rgb(242,242,242);
+	text-align: center;
+	color: rgb(105,105,105);
+	margin: 0px;
+	text-decoration: none;
+	font-family: Helvetica;
+	width: 100%;
+	padding-bottom: 50px;
+}
+.departments a{
+	text-decoration: none;
+	font-size: 17px;
+	font-family: Helvetica;
+	color: rgb(105,105,105);
+}
+.departments a:hover{
+	color: rgb(105,105,105);
+	font-weight: bold;
+}
+.departments table {
+	margin: 0 auto;	
+}
+footer{
+	text-align: left;
+	background-color: rgb(105,105,105);
+	color: rgb(255,255,255);
+	vertical-align: middle;
+	width: max-width;
+	padding: 70px;
+}
+footer .text{
+	float: right;
+	font-family: Arial black;
+	font-size: 30px;
+	margin-top: -220px;
+	margin-right: 20px;
+	letter-spacing: 2px;
+	text-shadow: 3px 2px rgb(34,139,34);
+}
+#slideshow { 
+    position: relative; 
+    height: 400px; 
+    padding: 10px;
+}
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+	
+}
+.aboutUs img{
+	padding: 20px;
+}
+.aboutUs article {
+	margin: 20px 80px 20px 80px;
+	text-align: left-side;
+}
+.departmentsPg h3 {
+	text-align: left;
+	padding: 50px 50px 0px 80px; 
+}
+.departmentsPg a:hover {
+	font-weight: bold;
+	color: rgb(105,105,105);
+}
+.departmentsPg a{
+	color: rgb(105,105,105);
+	text-decoration: none;
+}
+.departmentsTable table {
+	position: absolute;
+    top: 200px;
+    right: 200px;
+    width: 900px;
+    height: 200px;
+	bottom: 50px;
+}
+.departmentsPg {
+	margin: 0 auto;
+	padding-bottom: 700px;
+}
+p {
+    list-style-type: vertical-align;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	color: rgb(105,105,105);
+	
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	color: rgb(105,105,105);
+	font-family: Helvetica;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+li.dropdown {
+    display: inline-block;
+	padding-bottom: 10px;
+	color: rgb(105,105,105);
+}
+
+.dropdown-content {
+    display: none;
+    position: block;
+    font-family: Helvetica;
+    min-width: 160px;
+    z-index: 1;
+	color: rgb(105,105,105);
+}
+
+.dropdown-content a {
+    color: rgb(105,105,105);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: vertical-list;
+    text-align: left;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.departmentsPg2 {
+	margin: 0 auto;
+	padding-bottom: 900px;
+}
+
+.departmentsPg2 h3 {
+	text-align: left;
+	padding: 50px 50px 0px 80px; 
+}
+
+.departmentsPg2 a:hover {
+	font-weight: bold;
+	color: rgb(105,105,105);
+}
+
+.departmentsPg2 a{
+	color: rgb(105,105,105);
+	text-decoration: none;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(34,139,34);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+	font-family: Helvetica;
+}
+
+input[type=submit] {
+    background-color: rgb(34,139,34);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	font-family: Helvetica;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+	font-family: Helvetica;
+}
+
+.container {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 5px;
+	font-family: Helvetica;
+}
+
+.contato {
+	text-align: left;
+}
+
+.form {
+	float: right;
+	width: 40%;
+	margin-top: -700px;
+}
+
+.oferta {
+	float: right;
+	margin-top: -410px;
+	margin-right: 90px;
+}
+
+.comoChegar {
+	color: white;
+}
+
+.comoChegar:hover {
+	color: rgb(34,139,34);
+}
+
+.inf {
+	float: right;
+	margin-top: -200px;
+	margin-right: 580px;
+	font-family: Helvetica;
+}
+
+.bottomText {
+	text-align: center;
+}
+
+.fotoLoja {
+	float: left;
+}
+
+.titleHis {
+	text-align: center;
+}
+
+
+
+
+
+
