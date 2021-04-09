@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<title>Ferragem Floripa 2 LTDA</title>
+		<link rel= "stylesheet" type= "text/css" href="css/main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script> <!-- javaScript to animate the pictures on my home page -->
+	$("#slideshow > div:gt(0)").hide();
+
+	setInterval(function() { 
+	$('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+	},  3000);
+	</script>
+</head>
+<body>
+<div id= "wrapper">	<!-- start wrapper tag --> 
+			<header class = "top">
+				<a href="pages/departmentsPaint.html" style="text-decoration:none">Tintas&nbsp; &nbsp; </a>
+				<a href="pages/departmentsFloor.html" style="text-decoration:none">Revestimentos&nbsp; &nbsp; </a>
+				<a href="#bottom" style="text-decoration:none">Serviços de Máquinas&nbsp; &nbsp; </a>
+				<a href="#bottom" id="location" style="text-decoration:none">Localização&nbsp; &nbsp; </a>
+				<a href="pages/contact.html" style="text-decoration:none">Contato</a>
+			</header>
+			<header>
+				<!-- Search container -->
+				<div class="box">
+					<div class="container-1">
+					<span class="icon"><i class="fa fa-search"></i></span>
+					<input type="search" id="search" placeholder="Como podemos ajudá-lo hoje?" />
+					</div>
+				</div>	
+	<!-- Logo Store --> 
+	<img src = "logo-floripa2.png" alt = "logo" width="90" height="90"> 	
+	<!-- Access links to other pages, on top --> 
+			<nav class="topnav">	
+				<li class="dropdown">	
+				<a href="javascript:void(1)" class="dropbtn">Departamentos</a>
+					<div class="dropdown-content">
+					<a href="pages/departmentsPaint.html">Tintas</a><br />
+					<a href="pages/departmentsFloor.html">Revestimentos</a><br />  
+					</div>
+				</li>
+				<a class= "under" href="index.html">Home</a>
+				<a class= "under" href="pages/about.html">A Empresa</a>
+				<a class= "under location" href="#bottom" >Localização</a>
+				<a class= "under" href="#bottom">Máquinas</a>
+				<a class= "under" href="pages/contact.html">Contato</a>
+			</nav>
+		<div class="orcamento">
+			<a href="pages/contact.html" style="text-decoration:none">Entre em contato conosco e faça seu orçamento</a>
+		</div>
+		</header>	
+	<main> <!-- opening main tag. Obs: validator marked this as a unclosed tag, but it is closed -->
+	<hr>
+		<div id="slideshow"> <!-- show the promo - slideshow pictures --> 
+			<div>
+				<img alt="" src="images/promoPorcelanato.jpg" width="1020" height="350"/>
+			</div>
+			<div>
+				<img alt="" src="images/promoTinta.jpg" width="1020" height="350" />
+			</div>
+		</div> <!-- close slideshow pictures --> 
+</div> <!-- Div close the wrapper. Obs: validator marked this as a unclosed tag, but it is here to close wrapper tag --> 
+
+	<div class="oferta">
+		<img src = "images/oferta.png" alt = "logo" width="300" height="350"> 
+	</div>
+
+	<div class="departments"> <!-- Departments with pictures - link to its pages --> 
+		<h3>Nossos Produtos</h3>
+		<hr>
+		<table>
+			<tr>
+				<td><img src = "images/flooring_1.jpg" alt = "Revestimentos" width="250" height="200" ></td>
+				<td><img src = "images/tintas_link.jpg" alt = "Tintas" width="250" height="200" ></td>
+				<td><img src = "images/chainsaw_1.jpg" alt = "Ferramentas" width="250" height="200" ></td>
+				<td><img src = "images/garden.jpg" alt = "Jardim" width="250" height="200" ></td>
+			</tr>
+			<tr>
+				<td><a class= "under" href="pages/departmentsFloor.html">Revestimentos</a></td>
+				<td><a class= "under" href="pages/departmentsPaint.html">Tintas</a></td>
+			</tr>
+		</table>	
+	</div>
+	</main> <!-- Closing main tag. Obs: validator marked this as a stray end tag, but it is opened above.  -->
+<footer>
+		<h3 id= "bottom">Localização</h3>
+		<address>Av. Rio Grande do Sul, 4081  Mathias Velho <br />Canoas – RS<br />Brasil <br /> </address><br /> 
+		<a class="comoChegar" href= "" style="text-decoration:none" >Como chegar</a> <br /><br />
+		<section>&copy; 2018 <a class="comoChegar" href= "">CCássio Sironi</a> </section>
+	<div class="inf">	
+		<h3>Contato</h3>
+		Loja: (51) 3466-6259<br /><br />
+		<a class="comoChegar" href= "mailto:ferragem@pzo.com.br">Email: contato@floripa2.com.br</a><br />
+	</div>
+	<div class="text">
+		<hr>A Ferragem Floripa 2<br />
+		atua no ramo de<br />
+		materiais de construção<br />
+		há mais de 20 anos.<hr>
+	</div>
+</footer>	
+		<div class="bottomText">
+			<p>Estamos prontos para atender você, venha nos fazer uma visita!</p>
+		</div>
+</body>
+</html>
